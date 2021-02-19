@@ -31,8 +31,9 @@ namespace VeteransCalculator
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.topPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblCombinedRating = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pboxExitButton = new System.Windows.Forms.PictureBox();
             this.btnLeftArm = new System.Windows.Forms.Button();
@@ -50,10 +51,9 @@ namespace VeteransCalculator
             this.btnNinetyPercent = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.lblRatingInputHistory = new System.Windows.Forms.Label();
-            this.lblCombinedRating = new System.Windows.Forms.Label();
             this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxExitButton)).BeginInit();
             this.SuspendLayout();
@@ -71,14 +71,17 @@ namespace VeteransCalculator
             this.topPanel.Size = new System.Drawing.Size(951, 235);
             this.topPanel.TabIndex = 0;
             // 
-            // pictureBox1
+            // lblCombinedRating
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 185);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.lblCombinedRating.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCombinedRating.ForeColor = System.Drawing.Color.Gold;
+            this.lblCombinedRating.Location = new System.Drawing.Point(391, 129);
+            this.lblCombinedRating.Name = "lblCombinedRating";
+            this.lblCombinedRating.Size = new System.Drawing.Size(456, 95);
+            this.lblCombinedRating.TabIndex = 2;
+            this.lblCombinedRating.Text = "100%";
+            this.lblCombinedRating.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCombinedRating.Click += new System.EventHandler(this.lblCombinedRating_Click);
             // 
             // pictureBox2
             // 
@@ -88,6 +91,15 @@ namespace VeteransCalculator
             this.pictureBox2.Size = new System.Drawing.Size(639, 83);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(294, 185);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -118,9 +130,12 @@ namespace VeteransCalculator
             this.btnLeftArm.Name = "btnLeftArm";
             this.btnLeftArm.Size = new System.Drawing.Size(200, 50);
             this.btnLeftArm.TabIndex = 2;
+            this.btnLeftArm.TabStop = false;
             this.btnLeftArm.Text = "Left Arm";
             this.btnLeftArm.UseVisualStyleBackColor = false;
             this.btnLeftArm.Click += new System.EventHandler(this.btnLeftArm_Click);
+            this.btnLeftArm.Enter += new System.EventHandler(this.btnLeftArm_Enter);
+            this.btnLeftArm.Leave += new System.EventHandler(this.btnLeftArm_Leave);
             // 
             // btnLeftLeg
             // 
@@ -131,9 +146,12 @@ namespace VeteransCalculator
             this.btnLeftLeg.Name = "btnLeftLeg";
             this.btnLeftLeg.Size = new System.Drawing.Size(200, 50);
             this.btnLeftLeg.TabIndex = 3;
+            this.btnLeftLeg.TabStop = false;
             this.btnLeftLeg.Text = "Left Leg";
             this.btnLeftLeg.UseVisualStyleBackColor = false;
             this.btnLeftLeg.Click += new System.EventHandler(this.btnLeftLeg_Click);
+            this.btnLeftLeg.Enter += new System.EventHandler(this.btnLeftLeg_Enter);
+            this.btnLeftLeg.Leave += new System.EventHandler(this.btnLeftLeg_Leave);
             // 
             // btnRightLeg
             // 
@@ -144,9 +162,12 @@ namespace VeteransCalculator
             this.btnRightLeg.Name = "btnRightLeg";
             this.btnRightLeg.Size = new System.Drawing.Size(200, 50);
             this.btnRightLeg.TabIndex = 4;
+            this.btnRightLeg.TabStop = false;
             this.btnRightLeg.Text = "Right Leg";
             this.btnRightLeg.UseVisualStyleBackColor = false;
             this.btnRightLeg.Click += new System.EventHandler(this.btnRightLeg_Click);
+            this.btnRightLeg.Enter += new System.EventHandler(this.btnRightLeg_Enter);
+            this.btnRightLeg.Leave += new System.EventHandler(this.btnRightLeg_Leave);
             // 
             // btnRightArm
             // 
@@ -157,9 +178,12 @@ namespace VeteransCalculator
             this.btnRightArm.Name = "btnRightArm";
             this.btnRightArm.Size = new System.Drawing.Size(200, 50);
             this.btnRightArm.TabIndex = 5;
+            this.btnRightArm.TabStop = false;
             this.btnRightArm.Text = "Right Arm";
             this.btnRightArm.UseVisualStyleBackColor = false;
             this.btnRightArm.Click += new System.EventHandler(this.btnRightArm_Click);
+            this.btnRightArm.Enter += new System.EventHandler(this.btnRightArm_Enter);
+            this.btnRightArm.Leave += new System.EventHandler(this.btnRightArm_Leave);
             // 
             // btnTenPercent
             // 
@@ -170,9 +194,12 @@ namespace VeteransCalculator
             this.btnTenPercent.Name = "btnTenPercent";
             this.btnTenPercent.Size = new System.Drawing.Size(200, 100);
             this.btnTenPercent.TabIndex = 6;
+            this.btnTenPercent.TabStop = false;
             this.btnTenPercent.Text = "10%";
             this.btnTenPercent.UseVisualStyleBackColor = false;
             this.btnTenPercent.Click += new System.EventHandler(this.btnTenPercent_Click);
+            this.btnTenPercent.Enter += new System.EventHandler(this.btnTenPercent_Enter);
+            this.btnTenPercent.Leave += new System.EventHandler(this.btnTenPercent_Leave);
             // 
             // btnTwentyPercent
             // 
@@ -183,9 +210,12 @@ namespace VeteransCalculator
             this.btnTwentyPercent.Name = "btnTwentyPercent";
             this.btnTwentyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnTwentyPercent.TabIndex = 7;
+            this.btnTwentyPercent.TabStop = false;
             this.btnTwentyPercent.Text = "20%";
             this.btnTwentyPercent.UseVisualStyleBackColor = false;
             this.btnTwentyPercent.Click += new System.EventHandler(this.btnTwentyPercent_Click);
+            this.btnTwentyPercent.Enter += new System.EventHandler(this.btnTwentyPercent_Enter);
+            this.btnTwentyPercent.Leave += new System.EventHandler(this.btnTwentyPercent_Leave);
             // 
             // btnThirtyPercent
             // 
@@ -196,9 +226,12 @@ namespace VeteransCalculator
             this.btnThirtyPercent.Name = "btnThirtyPercent";
             this.btnThirtyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnThirtyPercent.TabIndex = 8;
+            this.btnThirtyPercent.TabStop = false;
             this.btnThirtyPercent.Text = "30%";
             this.btnThirtyPercent.UseVisualStyleBackColor = false;
             this.btnThirtyPercent.Click += new System.EventHandler(this.btnThirtyPercent_Click);
+            this.btnThirtyPercent.Enter += new System.EventHandler(this.btnThirtyPercent_Enter);
+            this.btnThirtyPercent.Leave += new System.EventHandler(this.btnThirtyPercent_Leave);
             // 
             // btnFortyPercent
             // 
@@ -209,9 +242,12 @@ namespace VeteransCalculator
             this.btnFortyPercent.Name = "btnFortyPercent";
             this.btnFortyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnFortyPercent.TabIndex = 9;
+            this.btnFortyPercent.TabStop = false;
             this.btnFortyPercent.Text = "40%";
             this.btnFortyPercent.UseVisualStyleBackColor = false;
             this.btnFortyPercent.Click += new System.EventHandler(this.btnFortyPercent_Click);
+            this.btnFortyPercent.Enter += new System.EventHandler(this.btnFortyPercent_Enter);
+            this.btnFortyPercent.Leave += new System.EventHandler(this.btnFortyPercent_Leave);
             // 
             // btnFiftyPercent
             // 
@@ -222,9 +258,12 @@ namespace VeteransCalculator
             this.btnFiftyPercent.Name = "btnFiftyPercent";
             this.btnFiftyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnFiftyPercent.TabIndex = 10;
+            this.btnFiftyPercent.TabStop = false;
             this.btnFiftyPercent.Text = "50%";
             this.btnFiftyPercent.UseVisualStyleBackColor = false;
             this.btnFiftyPercent.Click += new System.EventHandler(this.btnFiftyPercent_Click);
+            this.btnFiftyPercent.Enter += new System.EventHandler(this.btnFiftyPercent_Enter);
+            this.btnFiftyPercent.Leave += new System.EventHandler(this.btnFiftyPercent_Leave);
             // 
             // btnSixtyPercent
             // 
@@ -235,9 +274,12 @@ namespace VeteransCalculator
             this.btnSixtyPercent.Name = "btnSixtyPercent";
             this.btnSixtyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnSixtyPercent.TabIndex = 11;
+            this.btnSixtyPercent.TabStop = false;
             this.btnSixtyPercent.Text = "60%";
             this.btnSixtyPercent.UseVisualStyleBackColor = false;
             this.btnSixtyPercent.Click += new System.EventHandler(this.btnSixtyPercent_Click);
+            this.btnSixtyPercent.Enter += new System.EventHandler(this.btnSixtyPercent_Enter);
+            this.btnSixtyPercent.Leave += new System.EventHandler(this.btnSixtyPercent_Leave);
             // 
             // btnSeventyPercent
             // 
@@ -248,9 +290,12 @@ namespace VeteransCalculator
             this.btnSeventyPercent.Name = "btnSeventyPercent";
             this.btnSeventyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnSeventyPercent.TabIndex = 12;
+            this.btnSeventyPercent.TabStop = false;
             this.btnSeventyPercent.Text = "70%";
             this.btnSeventyPercent.UseVisualStyleBackColor = false;
             this.btnSeventyPercent.Click += new System.EventHandler(this.btnSeventyPercent_Click);
+            this.btnSeventyPercent.Enter += new System.EventHandler(this.btnSeventyPercent_Enter);
+            this.btnSeventyPercent.Leave += new System.EventHandler(this.btnSeventyPercent_Leave);
             // 
             // btnEightyPercent
             // 
@@ -261,9 +306,12 @@ namespace VeteransCalculator
             this.btnEightyPercent.Name = "btnEightyPercent";
             this.btnEightyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnEightyPercent.TabIndex = 13;
+            this.btnEightyPercent.TabStop = false;
             this.btnEightyPercent.Text = "80%";
             this.btnEightyPercent.UseVisualStyleBackColor = false;
             this.btnEightyPercent.Click += new System.EventHandler(this.btnEightyPercent_Click);
+            this.btnEightyPercent.Enter += new System.EventHandler(this.btnEightyPercent_Enter);
+            this.btnEightyPercent.Leave += new System.EventHandler(this.btnEightyPercent_Leave);
             // 
             // btnNinetyPercent
             // 
@@ -274,9 +322,12 @@ namespace VeteransCalculator
             this.btnNinetyPercent.Name = "btnNinetyPercent";
             this.btnNinetyPercent.Size = new System.Drawing.Size(200, 100);
             this.btnNinetyPercent.TabIndex = 14;
+            this.btnNinetyPercent.TabStop = false;
             this.btnNinetyPercent.Text = "90%";
             this.btnNinetyPercent.UseVisualStyleBackColor = false;
             this.btnNinetyPercent.Click += new System.EventHandler(this.btnNinetyPercent_Click);
+            this.btnNinetyPercent.Enter += new System.EventHandler(this.btnNinetyPercent_Enter);
+            this.btnNinetyPercent.Leave += new System.EventHandler(this.btnNinetyPercent_Leave);
             // 
             // btnClear
             // 
@@ -290,6 +341,8 @@ namespace VeteransCalculator
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Enter += new System.EventHandler(this.btnClear_Enter);
+            this.btnClear.Leave += new System.EventHandler(this.btnClear_Leave);
             // 
             // lblRatingInputHistory
             // 
@@ -301,18 +354,6 @@ namespace VeteransCalculator
             this.lblRatingInputHistory.TabIndex = 16;
             this.lblRatingInputHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblRatingInputHistory.Click += new System.EventHandler(this.lblRatingInputHistory_Click);
-            // 
-            // lblCombinedRating
-            // 
-            this.lblCombinedRating.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCombinedRating.ForeColor = System.Drawing.Color.Gold;
-            this.lblCombinedRating.Location = new System.Drawing.Point(391, 129);
-            this.lblCombinedRating.Name = "lblCombinedRating";
-            this.lblCombinedRating.Size = new System.Drawing.Size(456, 95);
-            this.lblCombinedRating.TabIndex = 2;
-            this.lblCombinedRating.Text = "100%";
-            this.lblCombinedRating.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCombinedRating.Click += new System.EventHandler(this.lblCombinedRating_Click);
             // 
             // frmMain
             // 
@@ -342,8 +383,8 @@ namespace VeteransCalculator
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.topPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxExitButton)).EndInit();
             this.ResumeLayout(false);

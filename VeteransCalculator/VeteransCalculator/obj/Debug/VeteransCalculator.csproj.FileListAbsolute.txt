@@ -8,3 +8,12 @@ E:\chees\TFS\100 - Programming Projects\300 - Veterans Calculator\VeteransCalcul
 E:\chees\TFS\100 - Programming Projects\300 - Veterans Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.exe
 E:\chees\TFS\100 - Programming Projects\300 - Veterans Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.pdb
 E:\chees\TFS\100 - Programming Projects\300 - Veterans Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.frmMain.resources
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\bin\Debug\VeteransCalculator.exe.config
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\bin\Debug\VeteransCalculator.exe
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\bin\Debug\VeteransCalculator.pdb
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.frmMain.resources
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.Properties.Resources.resources
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.csproj.GenerateResource.cache
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.csproj.CoreCompileInputs.cache
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.exe
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.pdb
