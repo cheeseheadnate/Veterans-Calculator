@@ -21,6 +21,7 @@ namespace VeteransCalculator
         public int addPercent = 0;
         public int newPercent = 0;
         public int numRatings = 0;
+        public bool bilateral = false;
 
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -30,22 +31,26 @@ namespace VeteransCalculator
 
         private void btnLeftArm_Click(object sender, EventArgs e)
         {
-
+            bilateral = true;
+            Console.WriteLine(bilateral);
         }
 
         private void btnLeftLeg_Click(object sender, EventArgs e)
         {
-
+            bilateral = true;
+            Console.WriteLine(bilateral);
         }
 
         private void btnRightLeg_Click(object sender, EventArgs e)
         {
-
+            bilateral = true;
+            Console.WriteLine(bilateral);
         }
 
         private void btnRightArm_Click(object sender, EventArgs e)
         {
-
+            bilateral = true;
+            Console.WriteLine(bilateral);
         }
 
         private void btnTenPercent_Click(object sender, EventArgs e)
