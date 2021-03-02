@@ -32,74 +32,75 @@ namespace VeteransCalculator
         private void btnLeftArm_Click(object sender, EventArgs e)
         {
             bilateral = true;
-            Console.WriteLine(bilateral);
+            Console.WriteLine("Left Arm " + bilateral);
         }
 
         private void btnLeftLeg_Click(object sender, EventArgs e)
         {
             bilateral = true;
-            Console.WriteLine(bilateral);
+            Console.WriteLine("Left Leg " + bilateral);
         }
 
         private void btnRightLeg_Click(object sender, EventArgs e)
         {
             bilateral = true;
-            Console.WriteLine(bilateral);
+            Console.WriteLine("Right Leg " + bilateral);
         }
 
         private void btnRightArm_Click(object sender, EventArgs e)
         {
             bilateral = true;
-            Console.WriteLine(bilateral);
+            Console.WriteLine("Right Arm " + bilateral);
         }
 
         private void btnTenPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("10%");
         }
 
         private void btnTwentyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("20%");
         }
 
         private void btnThirtyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("30%");
         }
 
         private void btnFortyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("40%");
         }
 
         private void btnFiftyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("50%");
         }
 
         private void btnSixtyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("60%");
         }
 
         private void btnSeventyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("70%");
         }
 
         private void btnEightyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("80%");
         }
 
         private void btnNinetyPercent_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("90%");
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("Clear");
             lblCombinedRating.Text = "0%";
             lblRatingInputHistory.Text = "";
         }
@@ -246,12 +247,12 @@ namespace VeteransCalculator
 
         private void btnClear_Enter(object sender, EventArgs e)
         {
-            this.btnClear.ForeColor = ColorTranslator.FromHtml("gold");
+
         }
 
         private void btnClear_Leave(object sender, EventArgs e)
         {
-            this.btnClear.ForeColor = ColorTranslator.FromHtml("white");
+
         }
     }
 }

@@ -17,3 +17,4 @@ E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\V
 E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.csproj.CoreCompileInputs.cache
 E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.exe
 E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.pdb
+E:\chees\TFS\100 - Programming Projects\Veterans-Calculator\VeteransCalculator\VeteransCalculator\obj\Debug\VeteransCalculator.csprojAssemblyReference.cache
